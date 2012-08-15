@@ -19,6 +19,6 @@ rule "Person means Tucson"
        Say "You probably meant Tucson"
 end
 
-query "Gel all Messages"
+query "Get all Messages"
     get All Messages
 end 
