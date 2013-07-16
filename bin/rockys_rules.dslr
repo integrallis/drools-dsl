@@ -1,0 +1,24 @@
+package org.integrallis.drools
+
+import org.integrallis.drools.Message
+
+expander say_something.dsl
+
+rule "Rocky Balboa Says"
+    when
+        If there is a Person with name of "Rocky Balboa" 
+        And Person is at least 30 years old and lives in "Philadelphia" 
+    then
+        Say "Yo, Adrian!"
+end 
+
+rule "Person means Tucson"
+   when
+       When there is a person living in a place with name that sounds like "Two Sun"
+   then
+       Say "You probably meant Tucson" 
+end
+
+query "Get all Messages" 
+    get All Messages
+end 
