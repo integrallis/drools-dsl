@@ -8,3 +8,4 @@
 .classpath
 .settings/*
 /test.log
+/bin
