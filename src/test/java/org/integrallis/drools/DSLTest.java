@@ -35,6 +35,7 @@ public class DSLTest extends BaseDroolsTestCase {
 		assertEquals(4, results.size());
 		for ( QueryResultsRow row : results ) {
 			Message message = (Message) row.get( "message" );
+			System.out.println(message.getMessage() + " instead of " + message.getOriginalWord());			
 			assertEquals("You probably meant Tucson", message.getMessage());
 		}
     }

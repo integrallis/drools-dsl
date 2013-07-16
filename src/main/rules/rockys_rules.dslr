@@ -16,9 +16,9 @@ rule "Person means Tucson"
    when
        When there is a person living in a place with name that sounds like "Two Sun"
    then
-       Say "You probably meant Tucson"
+       Say "You probably meant Tucson" 
 end
 
-query "Get all Messages"
+query "Get all Messages" 
     get All Messages
 end 
