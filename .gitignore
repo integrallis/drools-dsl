@@ -7,6 +7,8 @@
 
 .classpath
 .settings/*
+.idea
+*.iml
 /test.log
 /bin
 /target/
